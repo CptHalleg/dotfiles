@@ -1,0 +1,54 @@
+{
+    "margin": 5,
+    "modules-left": [
+        "custom/shutdown",
+        "tray",
+    ],
+    "modules-center": [
+        "hyprland/workspaces"
+    ],
+    "modules-right": [
+        //"bluetooth",
+        "network",
+        "pulseaudio",
+        "battery",
+        "cpu",
+        "memory",
+        "clock"
+    ],
+
+    "custom/shutdown": {
+        "format": "shutdown",
+        "on-click": "~/.config/waybar/lock.sh"
+    },
+    "hyprland/workspaces" : {
+        "format": "{name}"
+    },
+    "network" : {
+        "format-ethernet" : "ethernet",
+        "format-wifi" : "{essid} ({signalStrength}%",
+        "format-disconnected": "disconnected",
+        "format-disabled": "disabled",
+        "tooltip-format": "interface: {ifname}\nip: {ipaddr}"
+    },
+    "clock" : {
+        "locale" : "de_DE.UTF-8",
+        "format" : "{:L%d.%m.%y %H:%M}",
+        "tooltip-format": "{:L%A, %e. %B, %Y %H:%MUhr %Z (UTC%z)}"
+    },
+    "cpu" : {
+        "format": "cpu{usage}%",
+        "on-click": "kitty htop"
+    },
+    "memory" : {
+        "format": "mem{percentage}%",
+        "tooltip-format": "{used}Gib/{total} used",
+        "on-click": "kitty htop"
+    },
+    "pulseaudio": {
+        "max-length": "10",
+        "format": "vol{volume}%",
+        "format-muted": "vol:M  ",
+        "on-click": "pwvucontrol"
+    }
+}

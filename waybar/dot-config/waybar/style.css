@@ -1,0 +1,133 @@
+* {
+    font-family: 'MartianMono Nerd Font Mono';
+    font-size: 13px;
+    border-radius: 0px;
+    background-color: transparent;
+    text-shadow: none;
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+}
+
+window#waybar {
+    background-color: transparent
+}
+
+window#waybar > box{
+    background-color: black;
+    margin: 5px;
+    box-shadow: 0px 0px 2px 1px #141414;
+}
+
+.module {
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 20px;
+}
+
+#workspaces button {
+    color: rgb(78, 78, 78);
+}
+
+#workspaces button.visible {
+    text-decoration: underline;
+    border-bottom: 2px;
+    border-color: rgb(78, 78, 78);
+    border-style: solid;
+}
+
+#workspaces button.active {
+    color: white;
+    border-bottom: 2px;
+    border-color: white;
+    border-style: solid;
+}
+
+#workspaces button:hover {
+    box-shadow: inherit;
+    text-shadow: inherit;
+}
+
+tooltip {
+    background-color: transparent
+}
+
+tooltip > box {
+    background-color: white;
+    color: black;
+    padding: 10px;
+    margin: 8px 8px 8px 8px;
+    box-shadow: 0px 0px 4px 2px #101010;
+}
+
+tooltip label {
+    color: black;
+}
+
+#tray  {
+    background-color: transparent
+}
+
+#tray menu {
+    background-color: white;
+    color: black;
+    padding: 2px;
+    margin: 8px 8px 8px 8px;
+    box-shadow: 0px 0px 4px 2px #101010;
+}
+
+#tray menu menuitem {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#tray menu menuitem:hover {
+    color: black;
+    background-color: #F6C2F3;
+    box-shadow: 0px 0px 4px 2px #101010;
+}
+
+#network {
+    color: #FAFABE;
+}
+
+#network:hover {
+    color: white;
+}
+
+#pulseaudio {
+    color: #C1EBC0;
+}
+
+#pulseaudio:hover {
+    color: white;
+}
+
+#cpu {
+    color: #C7CAFF;
+}
+
+#cpu:hover {
+    color: white;
+}
+
+#memory {
+    color: #CDABEB;
+}
+
+#memory:hover {
+    color: white;
+}
+
+#clock {
+    color: #F6C2F3;
+}
+
+#clock:hover {
+    color: white;
+}

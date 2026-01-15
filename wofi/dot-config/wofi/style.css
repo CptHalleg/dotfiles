@@ -1,0 +1,61 @@
+* {
+    font-family: 'MartianMono Nerd Font Mono';
+    font-size: 15px;
+    border-radius: 0px;
+    background-color: transparent;
+    text-shadow: none;
+    padding: 0;
+    margin: 0;
+    border: none;
+    color: black;
+    outline: none;
+}
+
+#window {
+    background-color: transparent;
+}
+
+#window > box{
+    margin: 8px 8px 8px 8px;
+    background-color: white;
+    box-shadow: 0px 0px 4px 2px #101010;
+}
+
+#outer-box{
+    padding: 20px;
+}
+
+#inner-box{
+    padding: 10px;
+}
+
+#input {
+    background-color: #CDABEB;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding: 5px;
+}
+
+#input:focus{
+    box-shadow: none;
+    border-color: #b6252e;
+    box-shadow: 0px 0px 4px 2px #101010;
+}
+
+#entry{
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding: 5px;
+}
+
+#entry:selected {
+    background-color: #F6C2F3;
+    box-shadow: 0px 0px 4px 2px #101010;
+}
+
+
+#text:selected {
+    color: black;
+}
