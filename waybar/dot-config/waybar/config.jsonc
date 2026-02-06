@@ -2,7 +2,7 @@
     "margin": 5,
     "modules-left": [
         "custom/shutdown",
-        "tray",
+        "tray"
     ],
     "modules-center": [
         "hyprland/workspaces"
@@ -19,7 +19,7 @@
 
     "custom/shutdown": {
         "format": "shutdown",
-        "on-click": "~/.config/waybar/lock.sh"
+        "on-click": "kitty --hold ./lock.sh ~/.config/waybar/shutdown.sh"
     },
     "hyprland/workspaces" : {
         "format": "{name}"

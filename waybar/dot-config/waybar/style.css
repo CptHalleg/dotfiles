@@ -28,6 +28,8 @@ window#waybar > box{
 
 #workspaces button {
     color: rgb(78, 78, 78);
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 #workspaces button.visible {
@@ -45,6 +47,11 @@ window#waybar > box{
 }
 
 #workspaces button:hover {
+    font-weight: bold;
+	color: white;
+	border-color: black;
+	color: black;
+	transition: none;
     box-shadow: inherit;
     text-shadow: inherit;
 }
