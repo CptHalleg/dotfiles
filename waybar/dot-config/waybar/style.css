@@ -30,6 +30,17 @@ window#waybar > box{
     color: rgb(78, 78, 78);
     padding-left: 5px;
     padding-right: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#custom-new_workspaces {
+    color: rgb(78, 78, 78);
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-weight: bold;
 }
 
 #workspaces button.visible {
@@ -54,6 +65,13 @@ window#waybar > box{
 	transition: none;
     box-shadow: inherit;
     text-shadow: inherit;
+}
+
+#workspaces button.urgent {
+    border: 2px;
+	border-color: #F09EA7;
+    border-style: solid;
+    color : #F09EA7;
 }
 
 tooltip {

@@ -5,7 +5,8 @@
         "tray"
     ],
     "modules-center": [
-        "hyprland/workspaces"
+        "hyprland/workspaces",
+        "custom/new_workspaces"
     ],
     "modules-right": [
         //"bluetooth",
@@ -22,7 +23,16 @@
         "on-click": "kitty --hold ./lock.sh ~/.config/waybar/shutdown.sh"
     },
     "hyprland/workspaces" : {
-        "format": "{name}"
+        "format": "{icon}{name}{icon}",
+        "format-icons": {
+            "default": " ",
+            "active": " ",
+            "urgent": "!"
+        }
+    },
+    "custom/new_workspaces": {
+        "format": " + ",
+        "on-click": "hyprctl dispatch workspace emptym"
     },
     "network" : {
         "format-ethernet" : "ethernet",
